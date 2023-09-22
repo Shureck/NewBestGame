@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageFile: {fileID: 4900000, guid: 3616216ffe4cdb64fb35846337be3ce3, type: 3}
-  tileSize: 1
+  tileSize: 0.5
   groundSprite: {fileID: 21300000, guid: 1c9b71e63d275e144beb016c46ed9a83, type: 3}
   targetSprite: {fileID: 21300000, guid: 42954e39304e9504783252d765d5bc4e, type: 3}
   playerSprite: {fileID: 21300000, guid: 21c068071f1de1246b7c3b108667f6e0, type: 3}

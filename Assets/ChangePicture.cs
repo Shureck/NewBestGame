@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ChangePicture : MonoBehaviour
 {
@@ -20,6 +21,16 @@ public class ChangePicture : MonoBehaviour
         {
             Debug.LogWarning("Не установлен компонент Image или новая картинка не назначена.");
         }
+    }
+    public void OpenGame()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        // Выгрузите текущую сцену
+        SceneManager.UnloadSceneAsync(currentSceneName);
+
+        // Загрузите новую сцену
+        SceneManager.LoadScene("Main");
     }
 
 }
