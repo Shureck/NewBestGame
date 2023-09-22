@@ -21,4 +21,5 @@ public class ChangePicture : MonoBehaviour
             Debug.LogWarning("Не установлен компонент Image или новая картинка не назначена.");
         }
     }
+
 }

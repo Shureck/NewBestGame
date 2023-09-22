@@ -4,13 +4,16 @@ using UnityEngine;
 public class Run : MonoBehaviour {
     Animator anim;
     public float speed = 5f;
+    public int state = 0;
     private Vector2 movement;
+    private Rigidbody2D rb;
  
  
     // Use this for initialization
     void Start () {
         //anim = GetComponent<Animator>();
-        //GetComponent<Rigidbody2D>().velocity = movement;
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = movement;
     }
    
     // Update is called once per frame
@@ -19,6 +22,8 @@ public class Run : MonoBehaviour {
         float inputY = Input.GetAxisRaw("Vertical");
         movement = new Vector2(inputX, inputY);
 
+        transform.Translate(movement * speed * Time.deltaTime);
+        // rb.MovePosition(movement * speed * Time.deltaTime);
 
         //Diagonals
  
@@ -73,8 +78,6 @@ public class Run : MonoBehaviour {
  
  
  
- 
-        transform.Translate(movement * speed * Time.deltaTime);
     }
  
    
