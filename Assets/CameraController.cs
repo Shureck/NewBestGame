@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -20,6 +21,17 @@ public class CameraController : MonoBehaviour
     private Transform player;
     private int lastX;
 
+
+    public void OpenGame(string name)
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        // Выгрузите текущую сцену
+        SceneManager.UnloadSceneAsync(currentSceneName);
+
+        // Загрузите новую сцену
+        SceneManager.LoadScene(name);
+    }
 
     void Start()
     {
