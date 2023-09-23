@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class LevelChange : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public string name;
     void Start()
     {
         
@@ -16,7 +18,7 @@ public class LevelChange : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) {  
 
             // Загрузите новую сцену
-            SceneManager.LoadScene("Puzzles3");
+            SceneManager.LoadScene(name);
         }
     }
 

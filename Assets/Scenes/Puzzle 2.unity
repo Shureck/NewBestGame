@@ -852,7 +852,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 577089acebf123a4aa4bf51035b74bac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71ecca280d03eb84f8d94ea232470312, type: 3}
   m_Color: {r: 0.7176471, g: 0.7058824, b: 0.7058824, a: 0.94509804}
   m_FlipX: 0
   m_FlipY: 0
@@ -872,7 +872,7 @@ Transform:
   m_GameObject: {fileID: 97368244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.0592165, y: 5.824941, z: 0.8375553}
+  m_LocalPosition: {x: -8.13, y: 5.12, z: 0.8375553}
   m_LocalScale: {x: 2.375, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -914,7 +914,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.09, y: 3.43}
+    oldSize: {x: 1.09, y: 4.01}
     newSize: {x: 1.09, y: 3.43}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2225,6 +2225,7 @@ GameObject:
   - component: {fileID: 308360615}
   - component: {fileID: 308360614}
   - component: {fileID: 308360613}
+  - component: {fileID: 308360616}
   m_Layer: 0
   m_Name: Writer_final
   m_TagString: Untagged
@@ -2292,7 +2293,12 @@ MonoBehaviour:
   trigger: 8
   condition:
     luaConditions: []
-    questConditions: []
+    questConditions:
+    - questName: Unblock Elevrosheeet
+      questState: 4
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
     acceptedTags:
     - Player
     acceptedGameObjects: []
@@ -2390,6 +2396,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &308360616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308360612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 32
+  condition:
+    luaConditions: []
+    questConditions:
+    - questName: Unblock Elevrosheeet
+      questState: 2
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
+    acceptedTags:
+    - Player
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: 
+  questState: 0
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  setAnotherQuestEntryState: 0
+  anotherQuestEntryNumber: 1
+  anotherQuestEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 2
+  barkConversation: 
+  barkText: "\u041D\u0443\u0436\u043D\u043D\u043E \u0434\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F
+    \u0434\u043E \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u0430"
+  barkTextSequence: 
+  barker: {fileID: 0}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: 
+  conversationConversant: {fileID: 0}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  startConversationEntryTitle: 
+  exclusive: 0
+  replace: 0
+  skipIfNoValidEntries: 0
+  preventRestartOnSameFrameEnded: 0
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
+    m_PersistentCalls:
+      m_Calls: []
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: 5e8cf7a8ebb341d4fb9432ddd579ff13, type: 2}
 --- !u!1 &394903005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,6 +4128,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1102604008}
+          m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_MethodName: set_sprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: 68f75c92a7d23734fa6a25cd39b8c7dd, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - guid: 966112d7-1b9e-43e6-b580-67f16a5bf9f2
     onExecute:
       m_PersistentCalls:
@@ -4067,7 +4165,7 @@ MonoBehaviour:
           m_MethodName: set_overrideSprite
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 21300000, guid: 8171c9b492496d64b8466103bfbd1aaa, type: 3}
+            m_ObjectArgument: {fileID: 21300000, guid: a11ddd090c78adb44990da88073b6aca, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -5834,7 +5932,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.29, y: 7.99}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5906,10 +6004,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   state: 0
-  upSprite: {fileID: 0}
-  downSprite: {fileID: 0}
-  leftSprite: {fileID: 0}
-  rightSprite: {fileID: 0}
+  upSprite: {fileID: 21300000, guid: d87464497110c7145b72257786c928b5, type: 3}
+  downSprite: {fileID: 21300000, guid: ea2be3bcf2c5a80488122c6d536c54ce, type: 3}
+  leftSprite: {fileID: 21300000, guid: 112ee3057df177b43ada4bbf24529f08, type: 3}
+  rightSprite: {fileID: 21300000, guid: 71fbea78f1143534783b7a0d2db4dd6c, type: 3}
 --- !u!212 &748700681
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5951,8 +6049,8 @@ SpriteRenderer:
   m_SortingLayerID: -132571061
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.3916874, g: 0.8867924, b: 0.36391956, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ea2be3bcf2c5a80488122c6d536c54ce, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5971,8 +6069,8 @@ Transform:
   m_GameObject: {fileID: 748700674}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: -11.74, z: 0}
-  m_LocalScale: {x: 1.5477326, y: 4.3366537, z: 1}
+  m_LocalPosition: {x: -0.07, y: -11.74, z: 0}
+  m_LocalScale: {x: 1.1292187, y: 0.7734375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7900,6 +7998,7 @@ GameObject:
   - component: {fileID: 1102604011}
   - component: {fileID: 1102604010}
   - component: {fileID: 1102604012}
+  - component: {fileID: 1102604013}
   m_Layer: 0
   m_Name: "\u0421\u0442\u043E\u043B \u0441\u0435\u0440\u0432"
   m_TagString: Untagged
@@ -7990,13 +8089,8 @@ MonoBehaviour:
   condition:
     luaConditions: []
     questConditions:
-    - questName: Unlock comp
-      questState: 6
-      checkQuestEntry: 0
-      entryNumber: 0
-      questEntryState: 0
-    - questName: Find code
-      questState: 6
+    - questName: Turn on the computer
+      questState: 2
       checkQuestEntry: 0
       entryNumber: 0
       questEntryState: 0
@@ -8025,7 +8119,8 @@ MonoBehaviour:
   sendMessages: []
   barkSource: 2
   barkConversation: 
-  barkText: "\u041D\u0443\u0436\u0435\u043D \u043A\u043E\u0434"
+  barkText: "\u0411\u0435\u0437 \u044D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u0430
+    \u043F\u043B\u043E\u0445\u043E \u0440\u0430\u0431\u043E\u0442\u0435\u0442"
   barkTextSequence: 
   barker: {fileID: 0}
   barkTarget: {fileID: 0}
@@ -8033,7 +8128,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 \u0432 \u0441\u0435\u0440\u0432\u0435\u0440\u043D\u043E\u0439"
+  conversation: 
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -8136,6 +8231,95 @@ MonoBehaviour:
     prependActorNameSeparator: ': '
     prependActorNameFormat: '{0}{1}'
     subtitleColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1102604013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102604007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 8
+  condition:
+    luaConditions: []
+    questConditions:
+    - questName: Turn on the computer
+      questState: 4
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
+    - questName: Find code
+      questState: 6
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
+    - questName: Unlock comp
+      questState: 6
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
+    acceptedTags:
+    - Player
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: 
+  questState: 0
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  setAnotherQuestEntryState: 0
+  anotherQuestEntryNumber: 1
+  anotherQuestEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 2
+  barkConversation: 
+  barkText: "\u041D\u0443\u0436\u0435\u043D \u043A\u043E\u0434"
+  barkTextSequence: 
+  barker: {fileID: 0}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 \u0432 \u0441\u0435\u0440\u0432\u0435\u0440\u043D\u043E\u0439"
+  conversationConversant: {fileID: 0}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  startConversationEntryTitle: 
+  exclusive: 0
+  replace: 0
+  skipIfNoValidEntries: 0
+  preventRestartOnSameFrameEnded: 0
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
+    m_PersistentCalls:
+      m_Calls: []
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: 5e8cf7a8ebb341d4fb9432ddd579ff13, type: 2}
 --- !u!1 &1107146918
 GameObject:
   m_ObjectHideFlags: 0
@@ -10738,6 +10922,11 @@ MonoBehaviour:
       checkQuestEntry: 0
       entryNumber: 0
       questEntryState: 0
+    - questName: Turn on the computer
+      questState: 2
+      checkQuestEntry: 0
+      entryNumber: 0
+      questEntryState: 0
     acceptedTags:
     - Player
     acceptedGameObjects: []
@@ -10833,7 +11022,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.09, y: 3.43}
+    oldSize: {x: 1.09, y: 4.01}
     newSize: {x: 1.09, y: 3.43}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10883,7 +11072,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 577089acebf123a4aa4bf51035b74bac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71ecca280d03eb84f8d94ea232470312, type: 3}
   m_Color: {r: 0.7735849, g: 0.2729441, b: 0.2729441, a: 0.94509804}
   m_FlipX: 0
   m_FlipY: 0
@@ -10903,7 +11092,7 @@ Transform:
   m_GameObject: {fileID: 1435001701}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.15, y: 5.82, z: 0.8375553}
+  m_LocalPosition: {x: -8.15, y: 5.07, z: 0.8375553}
   m_LocalScale: {x: 2.375, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12145,10 +12334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920449feb50d0a1488cfa3c9b3a6a974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftLimit: -14.17
-  rightLimit: 13.94
-  bottomLimit: -14.41
-  upperLimit: 11.06
+  leftLimit: -12.1
+  rightLimit: 12
+  bottomLimit: -14.6
+  upperLimit: 12.6
   dumping: 2.5
   offset: {x: 0, y: 1}
   isLeft: 0
@@ -14333,7 +14522,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_TargetDisplay: 0
 --- !u!224 &2029692571
 RectTransform:

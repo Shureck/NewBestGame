@@ -1516,7 +1516,7 @@ MonoBehaviour:
   usePlayOneShot: 0
   interruptAudioClip: 0
   stopAudioOnSilentCharacters: 0
-  stopAudioOnPauseCodes: 0
+  stopAudioOnPauseCodes: 1
   silentCharacters: 
   fullPauseCharacters: 
   quarterPauseCharacters: 
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   removeDuplicateTypewriterEffects: 1
   playOnEnable: 1
   waitOneFrameBeforeStarting: 1
-  stopOnConversationEnd: 0
+  stopOnConversationEnd: 1
   autoScrollSettings:
     autoScrollEnabled: 0
     scrollRect: {fileID: 0}
