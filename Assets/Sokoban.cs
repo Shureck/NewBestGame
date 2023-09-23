@@ -27,22 +27,26 @@ public class Sokoban : MonoBehaviour
     }
 
     public TextAsset stageFile; // ステージ構造が記述されたテキストファイル
-
+     public TextAsset stageFile1;
+      public TextAsset stageFile2;
     private int rows; // 行数
     private int columns; // 列数
     private TileType[,] tileList; // タイル情報を管理する二次元配列
 
     public float tileSize; // タイルのサイズ
-
+    public GameObject parent;
     public Sprite groundSprite; // 地面のスプライト
     public Sprite targetSprite; // 目的地のスプライト
     public Sprite playerSprite; // プレイヤーのスプライト
     public Sprite blockSprite; // ブロックのスプライト
+    public Sprite wallSprite; // ブロックのスプライト
 
     private GameObject player; // プレイヤーのゲームオブジェクト
     private Vector2 middleOffset; // 中心位置
     private int blockCount; // ブロックの数
-    private bool isClear; // ゲームをクリアした場合 true
+    public bool isClear = false; // ゲームをクリアした場合 true
+
+    public int level = 0;
 
     // 各位置に存在するゲームオブジェクトを管理する連想配列
     private Dictionary<GameObject, Vector2Int> gameObjectPosTable = new Dictionary<GameObject, Vector2Int>();
@@ -50,18 +54,17 @@ public class Sokoban : MonoBehaviour
     // ゲーム開始時に呼び出される
     private void Start()
     {
-        LoadTileData(); // タイルの情報を読み込む
+        LoadTileData(stageFile); // タイルの情報を読み込む
         CreateStage(); // ステージを作成
     }
 
     // タイルの情報を読み込む
-    private void LoadTileData()
+    private void LoadTileData(TextAsset file)
     {
         // タイルの情報を一行ごとに分割
-        var lines = stageFile.text.Split
-        (
-            new[] { '\r', '\n' },
-            StringSplitOptions.RemoveEmptyEntries
+        var lines = file.text.Split(
+                new[] { '\r', '\n' },
+                StringSplitOptions.RemoveEmptyEntries
         );
 
         // タイルの列数を計算
@@ -100,14 +103,13 @@ public class Sokoban : MonoBehaviour
                 var val = tileList[ x, y ];
 
                 // 何も無い場所は無視
-                if ( val == TileType.NONE ) continue;
 
                 // タイルの名前に行番号と列番号を付与
                 var name = "tile" + y + "_" + x;
 
                 // タイルのゲームオブジェクトを作成
                 var tile = new GameObject( name );
-
+                tile.transform.SetParent(parent.transform);
                 // タイルにスプライトを描画する機能を追加
                 var sr = tile.AddComponent<SpriteRenderer>();
 
@@ -117,12 +119,30 @@ public class Sokoban : MonoBehaviour
                 // タイルの位置を設定
                 tile.transform.position = GetDisplayPosition( x, y );
 
+                if ( val == TileType.NONE )
+                {
+                    // 目的地のゲームオブジェクトを作成
+                    var destination = new GameObject( "wall" );
+                    destination.transform.SetParent(parent.transform);
+                    // 目的地にスプライトを描画する機能を追加
+                    sr = destination.AddComponent<SpriteRenderer>();
+
+                    // 目的地のスプライトを設定
+                    sr.sprite = wallSprite;
+
+                    // 目的地の描画順を手前にする
+                    sr.sortingOrder = 1;
+
+                    // 目的地の位置を設定
+                    destination.transform.position = GetDisplayPosition( x, y );
+                }
+
                 // 目的地の場合
                 if ( val == TileType.TARGET )
                 {
                     // 目的地のゲームオブジェクトを作成
                     var destination = new GameObject( "destination" );
-
+                    destination.transform.SetParent(parent.transform);
                     // 目的地にスプライトを描画する機能を追加
                     sr = destination.AddComponent<SpriteRenderer>();
 
@@ -140,7 +160,7 @@ public class Sokoban : MonoBehaviour
                 {
                     // プレイヤーのゲームオブジェクトを作成
                     player = new GameObject( "player" );
-
+                    player.transform.SetParent(parent.transform);
                     // プレイヤーにスプライトを描画する機能を追加
                     sr = player.AddComponent<SpriteRenderer>();
 
@@ -161,10 +181,10 @@ public class Sokoban : MonoBehaviour
                 {
                     // ブロックの数を増やす
                     blockCount++;
-
+                    
                     // ブロックのゲームオブジェクトを作成
                     var block = new GameObject( "block" + blockCount );
-
+                    block.transform.SetParent(parent.transform);
                     // ブロックにスプライトを描画する機能を追加
                     sr = block.AddComponent<SpriteRenderer>();
 
@@ -231,6 +251,8 @@ public class Sokoban : MonoBehaviour
     {
         // ゲームクリアしている場合は操作できないようにする
         if ( isClear ) return;
+
+        if (Input.GetKey(KeyCode.R)) Restart();
 
         // 上矢印が押された場合
         if ( Input.GetKeyDown( KeyCode.UpArrow ) )
@@ -425,7 +447,39 @@ public class Sokoban : MonoBehaviour
         if ( blockOnTargetCount == blockCount )
         {
             // ゲームクリア
-            isClear = true;
+            if (level == 2){
+                isClear = true;
+                return;
+            }
+
+            gameObjectPosTable = new Dictionary<GameObject, Vector2Int>();
+            blockCount = 0;
+            while (parent.transform.childCount > 0) {
+                DestroyImmediate(parent.transform.GetChild(0).gameObject);
+            } 
+            level++;
+            if (level == 0) LoadTileData(stageFile);
+            if (level == 1) LoadTileData(stageFile1);
+            if (level == 2) LoadTileData(stageFile2);
+            CreateStage();
+            // CreateStage();
         }
+    }
+
+    public void Restart(){
+        if (level == 3){
+                isClear = true;
+                return;
+            }
+
+        gameObjectPosTable = new Dictionary<GameObject, Vector2Int>();
+        blockCount = 0;
+        while (parent.transform.childCount > 0) {
+            DestroyImmediate(parent.transform.GetChild(0).gameObject);
+        }
+        if (level == 0) LoadTileData(stageFile);
+        if (level == 1) LoadTileData(stageFile1);
+        if (level == 2) LoadTileData(stageFile2);
+        CreateStage();
     }
 }
