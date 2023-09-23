@@ -24,6 +24,9 @@ public class Puzzle : MonoBehaviour
                 transform.position = rightPosition;
             }
         }
+        else{
+            inRightPos = false;
+        }
 
     }
 }

@@ -429,8 +429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageFile: {fileID: 4900000, guid: 3616216ffe4cdb64fb35846337be3ce3, type: 3}
-  stageFile1: {fileID: 4900000, guid: 21b9f150bb63dd24892c39710c1f8a88, type: 3}
-  stageFile2: {fileID: 4900000, guid: 6fb1f522b6576314d8e52daf76c59970, type: 3}
+  stageFile1: {fileID: 4900000, guid: 6fb1f522b6576314d8e52daf76c59970, type: 3}
+  stageFile2: {fileID: 4900000, guid: 21b9f150bb63dd24892c39710c1f8a88, type: 3}
   tileSize: 0.62
   parent: {fileID: 1937111970}
   groundSprite: {fileID: 21300000, guid: 8b7993977f8f2bb41b4186c718455bee, type: 3}
