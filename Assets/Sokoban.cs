@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Sokoban : MonoBehaviour
 {
     // タイルの種類
@@ -449,6 +449,7 @@ public class Sokoban : MonoBehaviour
             // ゲームクリア
             if (level == 2){
                 isClear = true;
+                SceneManager.LoadScene("Puzzle 3");
                 return;
             }
 
