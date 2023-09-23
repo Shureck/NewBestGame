@@ -2153,7 +2153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbeba69eacd9755408693b9bcf977573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Puzzle 3
 --- !u!61 &1524931676
 BoxCollider2D:
   m_ObjectHideFlags: 0
