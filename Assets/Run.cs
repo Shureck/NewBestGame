@@ -94,6 +94,10 @@ public class Run : MonoBehaviour {
         }
     }
  
+    public void ChangePosition()
+    {
+        transform.position = new Vector2(-5.11f, 3.16f);
+    }
    
 }
  
