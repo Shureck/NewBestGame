@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: f80b6d9a58b724e4b8e24de9b45b421c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 755.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4464b064836e1454daf8eea16a20e651
+      internalID: 1214573211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 755.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add2384a7e7664f48a6737e701f804eb
+      internalID: 801474581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 755.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c770ce0b1df96ea41bf340931d6c9f3b
+      internalID: -894457607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 755.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2d2b2965f3fec42a926f14faba4d18
+      internalID: 2031712427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_4
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 755.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146b448096a188b4c8c74a7f0b6d22b9
+      internalID: 357082696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_5
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 755.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c758d4ebe969d544297728d04ee72001
+      internalID: -540848324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 604.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b755ec36e0c864c9c56f72274619f0
+      internalID: -1481514195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 604.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e764492ec9d914bab2fe1fa0659d00
+      internalID: -1431661256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 604.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbcee6f2de00094c9526a34a9165771
+      internalID: -1228761935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_9
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 604.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc674373c78faf9499a0a6c92ce0c6d3
+      internalID: 106265504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_10
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 604.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed9b8e7b76c7924594c5144a3fa72bd
+      internalID: -1615664789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_11
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 604.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be80a341a4857e4ba1303d35b2b3efc
+      internalID: -274163456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 453.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48667b3ef3c25649a2fb98e72e874fc
+      internalID: -1600931945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 453.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8648d6223bf45cd459c28ced9f826c50
+      internalID: -301437349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 453.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55050c5e763ef7a44a5944f567501fe6
+      internalID: -2009054044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 453.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94db9ba547402c648abcdf8757237175
+      internalID: -558625836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_16
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 453.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f861fb8babbd91c419b76ad6087e3a81
+      internalID: 790239012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_17
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 453.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aebca77e746451479dcf4212be4419c
+      internalID: 466156847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 302.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beddbabc999d0774abe043db6e366bfd
+      internalID: 1574709522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 302.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba98baf8bab000e4cb105c14f0cf83c2
+      internalID: -377953177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_20
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 302.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c72e84185544743ae586f3e815f706
+      internalID: 1043686824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_21
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 302.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad32d910782cd154c93977fd9e0bb718
+      internalID: -1568908480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_22
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 302.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d56b24c32bfbd4a8628f85f848f59c
+      internalID: 893685036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_23
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 302.8333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c97e5566f008324fa642780b3c7a1c3
+      internalID: 1244502638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 151.83333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05974b85111e6d64ebf3aed8aee5df28
+      internalID: 1263430653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_25
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 151.83333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca5c2729cb90ac4cb589c248b5cac57
+      internalID: 2108248712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_26
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 151.83333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed63cba0c2089b48b2857e2969a45f2
+      internalID: 197603321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_27
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 151.83333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12921ff60a009ab4a8c6e320fa0b1c7a
+      internalID: 1571388648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_28
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 151.83333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb3d71e132f658468ae0def5cef576b
+      internalID: -1196043150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_29
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 151.83333
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e062023a8857e46a264aae339865d2
+      internalID: -19738296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.83332825
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d904e809f45faa747b02c3c50f6ccae0
+      internalID: 710614021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_31
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0.83332825
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcdddbde0a0d6746b139013637bbccf
+      internalID: 2001410046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_32
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0.83332825
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a02e9a646c2c914581fe47cde4d104f
+      internalID: -2026675190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_33
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0.83332825
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef73b67e82b7ff4b8d24aeaae3436ab
+      internalID: 1889782895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_34
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 0.83332825
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dbf072df2acc644b66dd442d340b6d
+      internalID: -1356906259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_35
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 0.83332825
+        width: 151.33333
+        height: 151.16667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c585735c40a76994e9cb1935f479b598
+      internalID: 1697352017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_0: 1214573211
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_1: 801474581
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_10: -1615664789
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_11: -274163456
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_12: -1600931945
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_13: -301437349
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_14: -2009054044
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_15: -558625836
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_16: 790239012
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_17: 466156847
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_18: 1574709522
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_19: -377953177
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_2: -894457607
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_20: 1043686824
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_21: -1568908480
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_22: 893685036
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_23: 1244502638
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_24: 1263430653
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_25: 2108248712
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_26: 197603321
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_27: 1571388648
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_28: -1196043150
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_29: -19738296
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_3: 2031712427
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_30: 710614021
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_31: 2001410046
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_32: -2026675190
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_33: 1889782895
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_34: -1356906259
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_35: 1697352017
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_4: 357082696
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_5: -540848324
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_6: -1481514195
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_7: -1431661256
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_8: -1228761935
+      draw-the-wires-and-the-electrical-panel-for-the-pixel-game--748099944_9: 106265504
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
